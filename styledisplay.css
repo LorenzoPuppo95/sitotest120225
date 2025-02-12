@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+body {
+    font-family: "Grechen Fuemen", serif;
+}
+.first-el{
+    color: white;
+    background-color: blue;
+    width:300px;
+}
+
+.second-el{
+    color: white;
+    background-color: rgb(255, 0, 200);
+    width:300px;
+}
+
+.third-el{
+    background-color: orange;
+    display: inline-block;
+    width:300px;
+}
+
+.fourth-el{
+    background-color: yellow;
+    display: inline-block;
+    width:300px;
+}
+
+.fifth-el{
+    background-color: red;
+    display: inline-block;
+    width:300px;
+}
