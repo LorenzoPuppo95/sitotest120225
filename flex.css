@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+
+*{
+    border:solid red 2px;
+    /*usarecomedefault*/
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Grechen Fuemen", serif !important;
+}
+p{
+    display: inline-block;
+    width:49.5%;
+    padding:80px;
+}
+
+.father{
+    /* height: 600px; */
+    padding:2px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    overflow: hidden;
+    gap: 15px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.daughter{
+    height:292px;
+    width:220px;
+    min-width: 200px;
+}
+
+.green{
+    background-color: green;
+    /* flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0; */
+}
+
+.red{
+    background-color: red;
+    /* font-size: 20px;
+    flex-grow: 99;
+    flex-shrink: 0;
+    flex-basis: 0; */
+}
