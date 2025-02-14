@@ -1,16 +1,13 @@
 .grid-container{
     display:grid;
-    grid-template-columns: 1fr 1fr 5fr 1fr 2fr;
+    grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: repeat(4, 200px);
     grid-template-areas: 
-        "left-sidebar header header header header"
-        "left-sidebar gold-sidebar main-content side-sidebar right-sidebar"
-        "left-sidebar gold-sidebar main-content side-sidebar right-sidebar"
-        "left-sidebar footer footer footer footer";
-    /* column-gap: 20px;
-    row-gap: 20px; */
+        "header header header"
+        "left-sidebar main-content right-sidebar"
+        "gold-sidebar main-content right-sidebar"
+        "footer footer footer";
     grid-gap:20px;
-    place-items: stretch;
 }
 
 /* .grid-dim{
@@ -46,15 +43,10 @@
 .g-i-6{
     background-color: gold;
     grid-area: gold-sidebar;
-    width:200px;
+    /* width:200px;
     height:200px;
     justify-self: center;
-    align-self: center;
-}
-
-.g-i-7{
-    background-color: orange;
-    grid-area: side-sidebar;
+    align-self: center; */
 }
 
 /* Esempio pulizia css
@@ -89,3 +81,44 @@
 .pad-min{
     padding:12px;
 } */
+
+/* @media screen and (min-width: 1200px) {
+    .grid-container{
+        display:grid;
+        grid-template-columns: 1fr 1fr 5fr 1fr 2fr;
+        grid-template-rows: repeat(4, 200px);
+        grid-template-areas: 
+            "left-sidebar header header header header"
+            "left-sidebar gold-sidebar main-content side-sidebar right-sidebar"
+            "left-sidebar gold-sidebar main-content side-sidebar right-sidebar"
+            "left-sidebar footer footer footer footer";
+    }
+} */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .grid-container{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 300px) 600px repeat(2, 300px);
+        grid-template-areas: 
+            "header header"
+            "left-sidebar left-sidebar"
+            "main-content main-content"
+            "right-sidebar gold-sidebar"
+            "footer footer";
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 300px) 600px repeat(3, 300px);
+        grid-template-areas: 
+            "header"
+            "left-sidebar"
+            "main-content"
+            "right-sidebar"
+            "gold-sidebar"
+            "footer";
+    }
+}
