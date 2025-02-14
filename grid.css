@@ -1,0 +1,31 @@
+.courier-xxs{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-small;
+}
+
+.bgc-red{
+    background-color: red;
+    color: white;
+}
+
+.bgc-lblue{
+    background-color: lightblue;
+    color:black;
+}
+
+.mono-xxl{
+    font-family: monospace;
+    font-size: xx-large;
+}
+
+.pad-max{
+    padding:20px;
+}
+
+.pad-avg{
+    padding:16px;
+}
+
+.pad-min{
+    padding:12px;
+}
